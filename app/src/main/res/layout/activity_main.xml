@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <ImageButton
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/dd_logo" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+
+    <TextView
+        android:id="@+id/dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100sp"/>
+    <EditText
+        android:id="@+id/newDinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="add new food...."/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"/>
+    <Button
+        android:id="@+id/addFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="newChoice"
+        android:text="ADD FOOD"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="144sp"/>
+    <Button
+        android:id="@+id/decide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="choosen"
+        android:text="DECIDE!"/>
+
+</LinearLayout>
